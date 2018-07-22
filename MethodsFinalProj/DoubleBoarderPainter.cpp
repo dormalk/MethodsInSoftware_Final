@@ -1,11 +1,11 @@
-#include "DoubleBoarderPainter.h"
+#include "DoubleBorderPainter.h"
 
 
-DoubleBoarderPainter::DoubleBoarderPainter(){
-	borders[0] = 201;
-	borders[1] = 187;
-	borders[2] = 205;
-	borders[3] = 186;
-	borders[4] = 200;
-	borders[5] = 188;
+DoubleBorderPainter::DoubleBorderPainter(){
+	borders[0] = 201;	//top-left
+	borders[1] = 187;	//top-right
+	borders[2] = 205;	//vertial-line
+	borders[3] = 186;	//horizontal-line
+	borders[4] = 200;	//bottom-left
+	borders[5] = 188;	//bottom-right
 }

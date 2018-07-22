@@ -1,38 +1,36 @@
 #pragma once
 #include <stdlib.h>
-#include "BoarderPainter.h";
-#include "BoarderPainter.h";
-#include "SingelBoarderPainter.h";
-#include "DoubleBoarderPainter.h";
-#include "NullBoarderPainter.h";
-#include "Exceptions.h";
+#include "BorderPainter.h"
+#include "BorderPainter.h"
+#include "SingelBorderPainter.h"
+#include "DoubleBorderPainter.h"
+#include "NullBorderPainter.h"
+#include "Exceptions.h"
 
 enum class BorderType {
 	SINGEL,DOUBLE,NONE
 };
 
-class BorderFactoy {
+class BorderFactory {
 public:
-	static BorderFactoy& getInstance() {
-		if (factory == NULL) {
-			factory = new BorderFactoy();
-		}
-		return *factory;
+	static BorderFactory& getInstance() {
+		static BorderFactory factory;
+		return factory;
 	}
 
-	const BoarderPainter& getSingel() {
+	const BorderPainter& getSingel() {
 		return _singel;
 	}
 
-	const BoarderPainter& getDouble() {
+	const BorderPainter& getDouble() {
 		return _double;
 	}
 
-	const BoarderPainter& getNull() {
+	const BorderPainter& getNull() {
 		return _null;
 	}
 
-	const BoarderPainter& getBoarderPainter(BorderType b)
+	const BorderPainter& getBoarderPainter(BorderType b)
 	{
 		switch (b){
 		case BorderType::SINGEL:
@@ -46,23 +44,15 @@ public:
 		}
 	}
 
-
 private:
 	//singelton
-	static BorderFactoy* factory;
-	
-	BorderFactoy() {
-		factory = NULL;
-	};
-	~BorderFactoy() {
-		if (factory != NULL)
-			delete factory;
-	}
+
+	BorderFactory() {};
 
 	//border types
-	const SingelBoarderPainter _singel;
-	const DoubleBoarderPainter _double;
-	const NullBoarderPainter _null;
+	const SingelBorderPainter _singel;
+	const DoubleBorderPainter _double;
+	const NullBorderPainter _null;
 
 	//exceptions
 	class WrongValue : public Exceptions{
@@ -71,4 +61,7 @@ private:
 				return "wrong border type value";
 			};
 	};
+
 };
+
+

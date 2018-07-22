@@ -6,7 +6,7 @@ Control::Control(int height, int width) :
 	_width(width),
 	_height(height),
 	_layer(0),
-	_border(BorderType::None),
+	_border(BorderType::NONE),
 	_background(Color::Black),
 	_foreground(Color::White),
 	_visible(true),
@@ -122,8 +122,8 @@ void Control::draw(Graphics & g, int left, int top, size_t layer) const
 	}
 	g.setBackground(_background);
 	g.setForeground(_foreground);
-	const BorderDrawer& borderDrawer = SimpleBorderFactory::instance().getBorderDrawer(_border);
-	borderDrawer.draw(g, getLeft() + left, getTop() + top, getWidth(), getHeight());
+	const BorderPainter& borderPainter = BorderFactory::getInstance().getBoarderPainter(_border);
+	borderPainter.draw(g, getLeft() + left, getTop() + top, getWidth(), getHeight());
 }
 void Control::mousePressed(int x, int y, bool isLeft){}
 void Control::keyDown(int keyCode, char character){}

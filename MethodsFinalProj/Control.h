@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include "Graphics.h"
-#include "SimpleBorderFactory.h"
+#include "BorderFactory.h"
 using namespace std;
 class Control
 {

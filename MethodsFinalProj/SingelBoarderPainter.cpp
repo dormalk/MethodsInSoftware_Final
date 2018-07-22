@@ -1,15 +1,15 @@
-#include "SingelBoarderPainter.h"
+#include "SingelBorderPainter.h"
 
-SingelBoarderPainter::SingelBoarderPainter() {
-	borders[0] = 218;
-	borders[1] = 191;
-	borders[2] = 196;
-	borders[3] = 179;
-	borders[4] = 192;
-	borders[5] = 217;
+SingelBorderPainter::SingelBorderPainter() {
+	borders[0] = (char)218;	//top-left
+	borders[1] = (char)191;	//top-right
+	borders[2] = (char)196;	//vertial-line
+	borders[3] = (char)179;	//horizontal-line
+	borders[4] = (char)192;	//bottom-left
+	borders[5] = (char)217;	//bottom-right
 }
 
-void SingelBoarderPainter::draw(Graphics &g, int top, int left, int width, int height) const {
+void SingelBorderPainter::draw(Graphics &g, int top, int left, int width, int height) const {
 	if (top > 0 && left > 0) {
 		g.write(left - 1, top - 1, string("") + borders[0]);
 	}

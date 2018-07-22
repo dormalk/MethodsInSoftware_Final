@@ -1,10 +1,10 @@
 #pragma once
 
-#include "BoarderPainter.h";
+#include "BorderPainter.h"
 
-class SingelBoarderPainter : public BoarderPainter {
+class SingelBorderPainter : public BorderPainter {
 public:
-	SingelBoarderPainter();
+	SingelBorderPainter();
 	virtual void draw(Graphics &g, int top, int left, int width, int height) const;
 protected:
 	char borders[6];

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "BoarderPainter.h";
+#include "BorderPainter.h"
 
-class NullBoarderPainter : public BoarderPainter {
+class NullBorderPainter : public BorderPainter {
 	virtual void draw(Graphics &g, int top, int left, int width, int height) const {}
 };
