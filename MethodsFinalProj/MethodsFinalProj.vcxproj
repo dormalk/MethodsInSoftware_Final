@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="DoubleBoarderPainter.cpp" />
     <ClCompile Include="EventEngine.cpp" />
@@ -128,6 +129,7 @@
   <ItemGroup>
     <ClInclude Include="BorderPainter.h" />
     <ClInclude Include="BorderFactory.h" />
+    <ClInclude Include="Button.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="DoubleBorderPainter.h" />
     <ClInclude Include="EventEngine.h" />

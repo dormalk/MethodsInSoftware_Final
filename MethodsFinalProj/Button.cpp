@@ -2,7 +2,9 @@
 
 Button::Button(int width) : Label(width){}
 
-void Button::addListener(MouseListener & listener)	_listeners.push_back(&listener)
+void Button::addListener(MouseListener & listener) { 
+	_listeners.push_back(&listener);
+};
 
 void Button::mousePressed(int x, int y, bool isLeft){
     
