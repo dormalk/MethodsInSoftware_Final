@@ -123,6 +123,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Panel.cpp" />
     <ClCompile Include="SingelBoarderPainter.cpp" />
+    <ClCompile Include="TextBox.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BorderPainter.h" />
@@ -136,6 +137,7 @@
     <ClInclude Include="NullBorderPainter.h" />
     <ClInclude Include="Panel.h" />
     <ClInclude Include="SingelBorderPainter.h" />
+    <ClInclude Include="TextBox.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -16,7 +16,7 @@ void TextBox::draw(Graphics & g, int left, int top, size_t layer) const {
 	}
 }
 
-void TextBox::mousePress(int x, int y, bool isLeft) {
+void TextBox::mousePressed(int x, int y, bool isLeft) {
 	if (!isLeft || !isVisible()) {
 		return;
 	}
@@ -26,7 +26,7 @@ void TextBox::mousePress(int x, int y, bool isLeft) {
 	}
 }
 
-void TextBox::keyDown(int key, char character) {
+void TextBox::keyDown(int keyCode, char character) {
 	if ((this != Control::getFocus()) || !isVisible()) {
 		return;
 	}
@@ -34,7 +34,7 @@ void TextBox::keyDown(int key, char character) {
 	bool deleteChar = false;
 	int currentcursPosition = _cursPosition;
     //check back/delete/return/left/right
-	switch (key) {
+	switch (keyCode) {
 	case VK_BACK:
 		if (_cursPosition > 0) {
 			--_cursPosition;

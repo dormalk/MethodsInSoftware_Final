@@ -9,11 +9,12 @@ SingelBorderPainter::SingelBorderPainter() {
 	borders[5] = (char)217;	//bottom-right
 }
 
-void SingelBorderPainter::draw(Graphics &g, int top, int left, int width, int height) const {
+void SingelBorderPainter::draw(Graphics &g, int left, int top, int width, int height) const {
+	//paint top-left border
 	if (top > 0 && left > 0) {
 		g.write(left - 1, top - 1, string("") + borders[0]);
 	}
-	else if (top > 0 && !left > 0) {
+	if (top > 0) {
 		g.write(left, top - 1, string(width, borders[2]) + borders[1]);
 	}
 

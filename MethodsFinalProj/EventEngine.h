@@ -12,6 +12,6 @@ private:
 	HANDLE console;
 	DWORD mode;
 
-	void moveFocused(Control &corrent, Control &next);
+	void onChangeFocuse(Control &src, Control *dst);
 
 };
