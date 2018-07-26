@@ -8,7 +8,7 @@ void Panel::getAllControls(vector<Control*>* controls) {
 	if (controls != nullptr) {
 		for (auto control : _controls) {
 			controls->push_back(control);
-		}		
+		}
 	}
 }
 

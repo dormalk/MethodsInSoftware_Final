@@ -11,7 +11,7 @@ public:
 	void setText(string value);
 	string getText() const;
 	virtual void draw(Graphics &g, int left, int top, size_t layer) const;
-
+	virtual string getValue() const { return getText(); };
 private:
 	string _text;
 	static const size_t TEXT_HEIGHT = 1;

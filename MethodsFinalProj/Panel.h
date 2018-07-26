@@ -18,6 +18,7 @@ public:
 	virtual void addControl (Control& control, int left, int top);
 	virtual void setForeground (Color color);
 	virtual void setBackground (Color color);
+	virtual string getValue() const { return string(""); };
 protected:
 	vector<Control*> _controls;
 };
