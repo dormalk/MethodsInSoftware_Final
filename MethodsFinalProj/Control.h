@@ -17,6 +17,7 @@ public:
 	virtual Color getBackground() const;
 	virtual void setBackground(Color color);
 	virtual void setBorder(BorderType border);
+	virtual BorderType getBorder();
 	static Control* getFocus();
 	static void setFocus(Control &control);
 	virtual void getAllControls(vector<Control*>* controls);
@@ -49,5 +50,6 @@ private:
 	bool _visible;
 	bool _canGetFocus;
 	static Control* _focus;
+
 };
 

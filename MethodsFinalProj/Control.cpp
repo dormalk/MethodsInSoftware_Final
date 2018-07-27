@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Control.h"
 Control* Control::_focus = nullptr;
 Control::Control(int height, int width) :
@@ -127,3 +128,7 @@ void Control::draw(Graphics & g, int left, int top, size_t layer) const
 }
 void Control::mousePressed(int x, int y, bool isLeft){}
 void Control::keyDown(int keyCode, char character){}
+
+BorderType Control::getBorder() {
+	return _border;
+}

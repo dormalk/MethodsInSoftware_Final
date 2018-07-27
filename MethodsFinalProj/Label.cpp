@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Label.h"
 
 Label::Label(int width) : Control(TEXT_HEIGHT, width) {
