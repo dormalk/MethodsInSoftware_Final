@@ -11,7 +11,6 @@ public:
     
     void addListener(struct MouseListener &listener);
     virtual void mousePressed(int x, int y, bool isLeft);
-	string getValue() const { return string(""); };
     
 private:
     
