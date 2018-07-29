@@ -116,12 +116,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="ComboBox.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="DoubleBoarderPainter.cpp" />
     <ClCompile Include="EventEngine.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="Label.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MessageBoxPanel.cpp" />
     <ClCompile Include="NumericBox.cpp" />
     <ClCompile Include="Panel.cpp" />
     <ClCompile Include="SingelBoarderPainter.cpp" />
@@ -131,12 +133,14 @@
     <ClInclude Include="BorderPainter.h" />
     <ClInclude Include="BorderFactory.h" />
     <ClInclude Include="Button.h" />
+    <ClInclude Include="ComboBox.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="DoubleBorderPainter.h" />
     <ClInclude Include="EventEngine.h" />
     <ClInclude Include="Exceptions.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="Label.h" />
+    <ClInclude Include="MessageBoxPanel.h" />
     <ClInclude Include="NullBorderPainter.h" />
     <ClInclude Include="NumericBox.h" />
     <ClInclude Include="Panel.h" />

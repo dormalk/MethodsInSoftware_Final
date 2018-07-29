@@ -4,7 +4,7 @@
 ComboBox::ComboBox(int width, vector<string> options) :
 	Panel(TEXT_HEIGHT * (options.size()+1), width),
 	_btnValue(width), _pnlOptions(TEXT_HEIGHT * options.size(), width),
-	_selectedIndex(0), _options(options), _listBorder(BorderType::None), _listIndex(0), _oldLayer(0) {
+	_selectedIndex(0), _options(options), _listBorder(BorderType::NONE), _listIndex(0), _oldLayer(0) {
 	struct ShowListListener* listener = new struct ShowListListener(*this);
 	_btnValue.addListener(*listener);
 	_pnlOptions.hide();
@@ -30,7 +30,7 @@ void ComboBox::setSelectedIndex(size_t index) {
 	_btnValue.setText(_options[index]);
 	_selectedIndex = index;
 	_pnlOptions.hide();
-	Panel::setBorder(BorderType::None);
+	Panel::setBorder(BorderType::NONE);
 	_btnValue.setBorder(_listBorder);
 }
 
@@ -54,9 +54,9 @@ void ComboBox::setBorder(BorderType border) {
 	_listBorder = border;
 	if (_pnlOptions.isVisible()) {
 		Panel::setBorder(_listBorder);
-		_btnValue.setBorder(BorderType::None); }
+		_btnValue.setBorder(BorderType::NONE); }
 	else {
-		Panel::setBorder(BorderType::None);
+		Panel::setBorder(BorderType::NONE);
 		_btnValue.setBorder(_listBorder); }
 }
 
@@ -102,3 +102,7 @@ void ComboBox::setLayer(size_t layer) {
 	_btnValue.setLayer(layer);
 	Panel::setLayer(layer);
 }
+
+string ComboBox::getText() const {
+	return _btnValue.getText();
+};
