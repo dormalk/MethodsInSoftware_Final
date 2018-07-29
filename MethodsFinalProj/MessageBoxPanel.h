@@ -13,7 +13,7 @@ public:
     virtual string getResult();
     virtual void show();
 	virtual void setText(string text);
-	virtual string getTitle();
+	string getTitle();
 	virtual void setTitle(string title);
 
 protected:

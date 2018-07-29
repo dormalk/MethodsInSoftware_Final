@@ -16,6 +16,7 @@ public:
 	virtual void mousePressed(int x, int y, bool isLeft);
 	virtual void keyDown(int keyCode, char character);
 	virtual void setLayer(size_t layer);
+	virtual string getText() const;
 protected:
 	virtual void addControl(Control& control, int left, int top);
 protected:
@@ -39,14 +40,14 @@ protected:
 			if (!_box._pnlOptions.isVisible()) {
 				_box._pnlOptions.show();
 				_box.Panel::setBorder(_box._listBorder);
-				_box._btnValue.setBorder(BorderType::None);
+				_box._btnValue.setBorder(BorderType::NONE);
 				_box._oldLayer = _box.getLayer();
 				_box.setLayer(4);
 				Control::setFocus(_box);
 			}
 			else {
 				_box._pnlOptions.hide();
-				_box.Panel::setBorder(BorderType::None);
+				_box.Panel::setBorder(BorderType::NONE);
 				_box._btnValue.setBorder(_box._listBorder);
 				_box.setLayer(_box._oldLayer);
 				_box._oldLayer = 0;
