@@ -6,7 +6,7 @@ using namespace std;
 class Panel : public Control
 {
 public:
-	Panel(int height = 50, int width=50);
+	Panel(int height = 50, int width = 50);
 	virtual ~Panel() = default;
 	virtual void getAllControls (vector<Control*>* controls);	
 	virtual void draw (Graphics &g, int left, int top, size_t layer) const;

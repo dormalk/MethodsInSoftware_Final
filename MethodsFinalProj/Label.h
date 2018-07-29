@@ -4,7 +4,7 @@
 #include "Control.h"
 using namespace std;
 
-class Label:public Control {
+class Label :public Control {
 
 public:
 	Label(int width);

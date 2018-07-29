@@ -8,7 +8,7 @@
 #include "Exceptions.h"
 
 enum class BorderType {
-	SINGEL,DOUBLE,NONE
+	SINGEL, DOUBLE, NONE
 };
 
 class BorderFactory {
@@ -32,7 +32,7 @@ public:
 
 	const BorderPainter& getBoarderPainter(BorderType b)
 	{
-		switch (b){
+		switch (b) {
 		case BorderType::SINGEL:
 			return _singel;
 		case BorderType::DOUBLE:
@@ -55,11 +55,11 @@ private:
 	const NullBorderPainter _null;
 
 	//exceptions
-	class WrongValue : public Exceptions{
-		public:
-			const char* massage() const {
-				return "wrong border type value";
-			};
+	class WrongValue : public Exceptions {
+	public:
+		const char* massage() const {
+			return "wrong border type value";
+		};
 	};
 
 };

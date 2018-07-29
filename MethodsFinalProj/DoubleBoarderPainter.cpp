@@ -2,7 +2,7 @@
 #include "DoubleBorderPainter.h"
 
 
-DoubleBorderPainter::DoubleBorderPainter(){
+DoubleBorderPainter::DoubleBorderPainter() {
 	borders[0] = 201;	//top-left
 	borders[1] = 187;	//top-right
 	borders[2] = 205;	//vertial-line

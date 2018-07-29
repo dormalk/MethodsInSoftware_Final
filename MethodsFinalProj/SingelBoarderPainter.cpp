@@ -19,15 +19,15 @@ void SingelBorderPainter::draw(Graphics &g, int left, int top, int width, int he
 		g.write(left, top - 1, string(width, borders[2]) + borders[1]);
 	}
 
-	for (int i = 0; i < height; i++){
-		if (left > 0){
+	for (int i = 0; i < height; i++) {
+		if (left > 0) {
 			g.write(left - 1, top + i, string(1, borders[3]));
 		}
 
 		g.write(left + width, top + i, string(1, borders[3]));
 	}
 
-	if (left > 0){
+	if (left > 0) {
 		g.write(left - 1, top + height, string("") + borders[4]);
 	}
 	g.write(left, top + height, string(width, borders[2]) + borders[5]);

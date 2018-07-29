@@ -30,10 +30,10 @@ void TextBox::keyDown(int keyCode, char character) {
 	if ((this != Control::getFocus()) || !isVisible()) {
 		return;
 	}
-    
+
 	bool deleteChar = false;
 	int currentcursPosition = _cursPosition;
-    //check back/delete/return/left/right
+	//check back/delete/return/left/right
 	switch (keyCode) {
 	case VK_BACK:
 		if (_cursPosition > 0) {
@@ -59,25 +59,25 @@ void TextBox::keyDown(int keyCode, char character) {
 	default:
 		break;
 	}
-    
-	if (deleteChar){
+
+	if (deleteChar) {
 		if (currentcursPosition < getText().size()) {
 			string newText = getText();
 			newText = newText.substr(0, currentcursPosition) + newText.substr(currentcursPosition + 1, newText.size() - currentcursPosition);
 			setText(newText);
 		}
 	}
-    
+
 	else if (character != '\0') {
 		string newText;
 		if (currentcursPosition < getText().size()) {
-			newText = getText().substr(0, currentcursPosition) + character + getText().substr(currentcursPosition+1, getText().size() - currentcursPosition);
+			newText = getText().substr(0, currentcursPosition) + character + getText().substr(currentcursPosition + 1, getText().size() - currentcursPosition);
 		}
 		else {
 			newText = getText() + character;
 		}
 		setText(newText);
-		if (_cursPosition < getWidth()-1) {
+		if (_cursPosition < getWidth() - 1) {
 			++_cursPosition;
 		}
 	}

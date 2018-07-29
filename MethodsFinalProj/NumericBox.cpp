@@ -78,10 +78,17 @@ int NumericBox::getMax() const
 }
 
 /*void NumericBox::draw(Graphics & g, int left, int top, size_t layer) const {
+<<<<<<< HEAD
 	if (layer == getLayer() && isVisible()) {
 		Control::draw(g, left, top, layer);
 		g.write(getLeft() + left, getTop() + top, _text + string(getWidth() - _text.size(), ' '));
 	}
+=======
+if (layer == getLayer() && isVisible()) {
+Control::draw(g, left, top, layer);
+g.write(getLeft() + left, getTop() + top, _text + string(getWidth() - _text.size(), ' '));
+}
+>>>>>>> e8893513d48bcce29775be9d9f4ca3555d774e5d
 }*/
 
 void NumericBox::addControl(Control & control, int left, int top)
@@ -98,6 +105,6 @@ void NumericBox::setLayer(size_t layer)
 	Panel::setLayer(layer);
 }
 
-string NumericBox::getText() const{
+string NumericBox::getText() const {
 	return to_string(_value);
 }
