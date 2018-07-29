@@ -43,7 +43,7 @@ void Panel::keyDown(int keyCode, char character) {
 		return;
 	}
 
-	for (auto control : _controls)	{
+	for (auto control : _controls) {
 		control->keyDown(keyCode, character);
 	}
 }
@@ -56,14 +56,14 @@ void Panel::addControl(Control & control, int left, int top) {
 
 void Panel::setForeground(Color color) {
 	Control::setForeground(color);
-	for (auto control : _controls)	{
+	for (auto control : _controls) {
 		control->setForeground(color);
 	}
 }
 
 void Panel::setBackground(Color color) {
 	Control::setBackground(color);
-	for (auto control : _controls)	{
+	for (auto control : _controls) {
 		control->setBackground(color);
 	}
 }

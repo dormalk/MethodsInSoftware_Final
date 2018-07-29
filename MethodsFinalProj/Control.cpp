@@ -125,5 +125,5 @@ void Control::draw(Graphics & g, int left, int top, size_t layer) const
 	const BorderPainter& borderPainter = BorderFactory::getInstance().getBoarderPainter(_border);
 	borderPainter.draw(g, getLeft() + left, getTop() + top, getWidth(), getHeight());
 }
-void Control::mousePressed(int x, int y, bool isLeft){}
-void Control::keyDown(int keyCode, char character){}
+void Control::mousePressed(int x, int y, bool isLeft) {}
+void Control::keyDown(int keyCode, char character) {}

@@ -3,6 +3,7 @@
 #include "Label.h"
 #include "Button.h"
 #include "TextBox.h"
+#include "NumericBox.h"
 
 class Form : public Panel {
 public:
@@ -25,6 +26,11 @@ public:
 		submit->setText("Submit");
 		submit->setBorder(BorderType::DOUBLE);
 		this->addControl(*submit, 2, 15);
+
+		NumericBox* passengers = new NumericBox(10);
+		passengers->setText("passengers");
+		passengers->setBorder(BorderType::DOUBLE);
+		this->addControl(*passengers, 2, 15);
 
 		Listener* listener1 = new Listener(*to);
 		submit->addListener(*listener1);
