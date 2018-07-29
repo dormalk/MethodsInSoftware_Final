@@ -14,6 +14,7 @@ public:
 	virtual void mousePressed(int x, int y, bool isLeft);
 	virtual void keyDown(int keyCode, char character);
 	virtual void setLayer(size_t layer);
+	virtual string getText();
 protected:
 	virtual void addControl(Control& control, int left, int top);
 	virtual void alterSelectedIndex(size_t index);

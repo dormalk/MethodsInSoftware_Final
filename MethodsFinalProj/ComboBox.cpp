@@ -106,4 +106,3 @@ void ComboBox::setLayer(size_t layer) {
 string ComboBox::getText() const {
 	return _btnValue.getText();
 };
->>>>>>> 2c7d9f4f9f17afe6767841f93bfc5609fbd08228

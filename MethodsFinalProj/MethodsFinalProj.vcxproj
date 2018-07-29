@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CheckList.cpp" />
     <ClCompile Include="ComboBox.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="DoubleBoarderPainter.cpp" />
@@ -126,6 +127,7 @@
     <ClCompile Include="MessageBoxPanel.cpp" />
     <ClCompile Include="NumericBox.cpp" />
     <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="RadioList.cpp" />
     <ClCompile Include="SingelBoarderPainter.cpp" />
     <ClCompile Include="TextBox.cpp" />
   </ItemGroup>
@@ -133,6 +135,7 @@
     <ClInclude Include="BorderPainter.h" />
     <ClInclude Include="BorderFactory.h" />
     <ClInclude Include="Button.h" />
+    <ClInclude Include="CheckList.h" />
     <ClInclude Include="ComboBox.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="DoubleBorderPainter.h" />
@@ -144,6 +147,7 @@
     <ClInclude Include="NullBorderPainter.h" />
     <ClInclude Include="NumericBox.h" />
     <ClInclude Include="Panel.h" />
+    <ClInclude Include="RadioList.h" />
     <ClInclude Include="SingelBorderPainter.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="TextBox.h" />

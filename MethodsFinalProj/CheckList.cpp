@@ -122,3 +122,11 @@ void CheckList::setLayer(size_t layer)
 	}
 	Panel::setLayer(layer);
 }
+
+string CheckList::getText() {
+	string str = "";
+	for (auto checked : _selectedIndices) {
+		str += (checked+" ");
+	}
+	return str;
+}
