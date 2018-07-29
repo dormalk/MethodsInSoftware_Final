@@ -1,9 +1,6 @@
 #pragma once
-
 #include <vector>
-
 #include "Control.h"
-
 using namespace std;
 
 class Panel : public Control
