@@ -25,7 +25,7 @@
 
 
 ## Contributers ##
-* Dor Malka - KingDor@gmail.com
+* Dor Malka - kingdor@gmail.com
 * Tal Valani - valanit90@gmail.com
 * Elaya Gabay - elaya.gabay@gmail.com
 * Tal Chausho Gur Arie - tal.cga@gmail.com
