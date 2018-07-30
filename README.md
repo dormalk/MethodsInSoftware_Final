@@ -24,9 +24,9 @@
 <img width="192" alt="finished" src="https://user-images.githubusercontent.com/10046870/43391864-82c1f16a-93fa-11e8-8ea6-bede566659f9.PNG">
 
 
-## Contributers
-Dor Malka -
-Tal Valani -
-Elaya Gabay -
-Tal Chausho -
-Ben -
+## Contributers ##
+* Dor Malka - KingDor@gmail.com
+* Tal Valani - valanit90@gmail.com
+* Elaya Gabay - elaya.gabay@gmail.com
+* Tal Chausho Gur Arie - tal.cga@gmail.com
+* ben reich - benrben4@gmail.com
