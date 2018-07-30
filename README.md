@@ -29,4 +29,4 @@
 * Tal Valani - valanit90@gmail.com
 * Elaya Gabay - elaya.gabay@gmail.com
 * Tal Chausho Gur Arie - tal.cga@gmail.com
-* ben reich - benrben4@gmail.com
+* Ben Reich - benrben4@gmail.com
